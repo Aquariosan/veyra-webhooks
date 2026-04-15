@@ -1,0 +1,31 @@
+{
+  "name": "veyra-webhooks",
+  "version": "1.0.0",
+  "description": "Webhook relay for AI agents. Register URLs, send payloads, view history. Reads free, writes require Veyra.",
+  "main": "dist/index.js",
+  "bin": {
+    "veyra-webhooks": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "tsc"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "@veyrahq/sdk-node": "^0.1.4",
+    "better-sqlite3": "^11.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/better-sqlite3": "^7.0.0"
+  },
+  "keywords": [
+    "mcp",
+    "ai-agents",
+    "veyra",
+    "commit-mode",
+    "trusted-writes"
+  ],
+  "license": "MIT",
+  "type": "module"
+}
